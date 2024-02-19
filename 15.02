@@ -1,0 +1,37 @@
+CARGO          | SALÁRIO     | CARGA HORÁRIA
+A. Estagiário      400,00        4h -6h        
+B. DEV júnior      1200,00       8h            
+C. DEV             2500,00       10h           
+D. DEV             2500,00       8h            
+E. DEV pleno       6000,00       12h           
+F. DEV pleno       6000,00       8h            
+G. DEV pleno       6000,00       8h            
+H. DEV pleno       12000,00      ?             
+
+--- ATIVIDADE I ---
+- Qual a diferença implícita que justifica o salário?
+  A princípio poderíamos pontuar que o salário está atrelado com a carga horária entretanto essa informação está equivocada, uma vez que analisando cargos como o de DEV comparado com o DEV pleno fica evidente que embora  ambos tenham cargas horárias de 8 horas o pleno recebe mais,
+isso nos leva a pensar que existe uma hierarquia atrelada aos cargos que independe da carga horária, o que ocorre na maioria das hierarquias? Os que estão em um alto posto geralmente são os mais sábios, experiêntes e estudados; já os que estão em um baixo nível da hierarquia são manos experiêntes
+e menos abastados geralmente com pouco estudo de maneira análoga os cargos acima também seguem essa linhagem  - embora as definições citadas não se apliquem em todos os casos - pois geralmente o estágiario é um estudante que está no  processo de ingressão no mercado de trabalho e está em busca de ganhar experiências e adquirir novos conhecimentos
+por outro lado, se ele se dedicar bastante ele conseguira até ajudar outras pessoas e ensiná-las o que ocorre no cargo de DEV pleno, são aqueles que possuem experiência e conhecimento podendo auxiliar os mais leigos.
+
+--- ATIVIDADE II ---
+Qual melhor equipe (4 pessoas) para uma empresa?
+  é difícil pontuar qual é a melhor equipe, pois isso variará de acordo com o objetivo da empresa (menos gastos; mais qualidade no produto etc.), entretanto acredita-se que toda empresa quer um bom desempenho da equipe então ela precisa optar em selecionar acima de tudo, pessoas com
+interrese em sempre evoluir. Mas para definir melhor, listaremos abaixo 2 versões de equipes: 
+Equipe dos sonhos (dream team):
+  C, E, H, G
+Melhor custo benefício (budget team):
+  A, B, C, E
+O que esta pergunta tem haver com a nossa disciplina?
+
+--- ATIVIDADE III ---
+Exemplificar os personagens (E, J, D, P);
+  E: estagiário
+  J: Júnior
+  D: Desenvolvedor
+  P: Desenvolvedor Pleno
+- Citar méritos do personagem "P" identificado;
+- Qual a relação do filme com a disciplina/curso;
+- Em qual categoria você se enquadra hojee no trimestre (pretende)?
+  Atualmente me enquadro como um estagiário, pois ainda não possuo muita experiência na área e ainda estou no processo de inserção no mercado de trabalho, no entanto possúo muita curiosidade em aprender sempre mais e com dedicação acredito que no trimestre posso conseguir elevar meu patamar
