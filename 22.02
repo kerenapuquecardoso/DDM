@@ -1,0 +1,151 @@
+Nome do aplicativo: fácil aluguel 
+-----------------------------------------------------------------------------------
+Escopo: Aplicativo móvel  para o gerenciamento de aluguéis de roupas de festa, nele há a necessidade de uma interface para o contrato do aluguél da roupa de festa, outra que precise de uma tela onde o colaborador informe um código ou nome do traje e o sistema informe em quais datas ele es
+tará disponível, além disso um calendário semanalmente e diariamnete com notificações de quais trajes irão sair do ateliê, 
+
+-----------------------------------------------------------------------------------
+Aprendizados na aula: 
+	O que é varíavel: é um espaço na memória, sendo esse espaço na memória ocupado por dados, e que cada váriavel está associada a um endereço na memória. Existem dois tipos de varíaveis: a de valor que guardam um determinado valor, já uma variável de referência que guarda um endereço de uma outra variável. Variável não tem modificador de acesso. 
+	
+	Existem vários tipos de dados como por exemplo: String, int, double, bool e o char. Entretanto no Dart é mais leve portanto não se usa tanto
+
+Boas práticas: nome de váriáveis tem que fazer sentido ao que se refere, e por padrão nome composto deve ser camelCase, o código não pode ser poliglota, em booleano os nomes das váriaveis devem começar com he ou e, se referindo a pergunta:  é isso? ou na prática: é animal ? sim ou não e em um código: bool eanimal: true; 
+
+	Interpolação: utilizada em várias linguagens, ela é a forma com que enviamos dados do dart para o banco de dados, ela é uma marcação que avisa a linguagem onde se deve processar, como por exemplo: print('${nomeAluno}') entretanto no dart é recomendado retirar as chaves
+
+	Para quebrar linhas pode utilizar o operador +, como no exemplo abaixo: 
+        print('alo'+
+        'tudo bem?');
+	ou ainda pode utilizar 3 aspas simples, como por exemplo: 
+	print('''
+	alo
+	tudo bem?
+	''');
+ o dart é uma linguagem fortemente tipada, entretsnto podemos utilizar apenas o tipo var;
+ Variáveis dinamicas: utilizando apenas a palavra chave dynamic no lugar da tipagem, entretanto isso NÃO é uma boa prática de programação.
+ 
+ No entanto ela pode ser utilizada sim, em um sistema único que pode sofrer variações no tipo de senha ou id
+
+ Variável constante: deve se colocar a palavra chave: const - esse valor não se altera.
+
+ ------------------------------------------------------------------------------------
+* Atividade 01
+   * a) Defina as seguintes variáveis e seus respectivos valores: 
+   * displina, carga horária com casas decimais, professor responsável, 
+   * se a disciplina está ativa e quantidade de alunos. 
+   * b) imprima todos os valores utilizando: i) concatenação, 
+   * ii) interpolação simples e (iii) a interpolação com processamento
+   * 
+  void main(List<String> arguments) {
+  print('Variáveis');
+  String nomeAluno = 'José';
+  int idadeAluno = 23;
+  String disciplina = 'Desenvolvimento Mobile';
+  double cargaHoraria = 186.5;
+  String professor = 'Helio';
+  bool eAtivaDisciplina = true;
+  int qtdAlunos = 25;
+
+  print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa' : 'precisa'}');
+
+  // i)
+  print('meu nome é: ' + nomeAluno);
+
+  // ii)
+  print(' $nomeAluno' +
+      ' ' +
+      '$idadeAluno' +
+      ' ' +
+      '$disciplina' +
+      ' ' +
+      '$cargaHoraria' +
+      ' ' +
+      '$professor' +
+      '  ' +
+      '$eAtivaDisciplina' +
+      ' ' +
+      '$qtdAlunos');
+
+  // iii)
+  print(
+      '$disciplina ${eAtivaDisciplina == false ? ' disciplina não encontrada!' : ' disciplina encontrada!'}');
+ ------------------------------------------------------------------------------------ 
+   * Atividade 02
+   * Aplique o que aprendeu no seu projeto.
+   String categoriaTraje;
+   printf('$categoriaTraje');
+    var tamanhoTraje = 'P';
+ ------------------------------------------------------------------------------------
+   * Atividade 03
+   * a) Refaça "Atividade 01" utilizando Inferência de Tipo.
+  
+     void main(List<String> arguments) {
+  print('Variáveis');
+  var nomeAluno = 'José';
+  var idadeAluno = 23;
+  var disciplina = 'Desenvolvimento Mobile';
+  var cargaHoraria = 186.5;
+  var professor = 'Helio';
+  var eAtivaDisciplina = true;
+  var qtdAlunos = 25;
+
+  print('$nomeAluno ${idadeAluno >= 18 ? 'não precisa' : 'precisa'}');
+
+  // i)
+  print('meu nome é: ' + nomeAluno);
+
+  // ii)
+  print(' $nomeAluno' +
+      ' ' +
+      '$idadeAluno' +
+      ' ' +
+      '$disciplina' +
+      ' ' +
+      '$cargaHoraria' +
+      ' ' +
+      '$professor' +
+      '  ' +
+      '$eAtivaDisciplina' +
+      ' ' +
+      '$qtdAlunos');
+
+  // iii)
+  print(
+      '$disciplina ${eAtivaDisciplina == false ? ' disciplina não encontrada!' : ' disciplina encontrada!'}');
+ ------------------------------------------------------------------------------------
+   * Atividade 04
+   * Aplique o que aprendeu no seu projeto.
+   */
+    dynamic codigoTraje = 'Amanda';
+    codigoTraje = 123;
+    var dataAlugel = '2004/02/35';
+    bool eAlugado = true;
+   ---------------------------------------------------------------------------------
+  //01) Considerando o exemplo, em qual contexto utilizamos uma variável dynamica?
+    Uma variável pode ser dinâmica quando você possuí um sistema espalhado em vários usuários que tenham acesso, mais especificamente aqueles que registram coisas no sistema, como por exemplo a oscilaçã de códigos de roupas, uma hora alfanuméricas outra hora apenas numéricos 
+    
+  //02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+  dynamic nomeCliente = 'Amanda'
+  nomeCliente = 10;
+  dynamic idadeCliente = 25;
+  idadeCliente = 'Joze';
+  São exemplos de códigos ruins, pois eles estão variando os valores que não deveriam estar lá, pois um nome nunca será um número, e uma idade nunca será um nome
+  
+  //03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+
+  dynamic idCliente = 123;
+  idCliente = 'Fj2f~]d';
+  dynamic codigoTraje = 12333
+  codigoTraje = 'jkbd2f';
+
+  São exemplos de códigos corretos, pois em dado momento um código pode ser alfanumérico e em outras pode ser apenas numeros ou ainda apenas letras.
+
+  ---------------------------------------------------------------------------------
+  01) Qual a diferença entre uma variável, const e final. Qual devemos utilizar?
+   const você já sabe o valor que você vai compilar
+  02) Em relação ao seu projeto, faça 2 exemplos de uso incorreto. Justifique.
+  03) Em relação ao seu projeto, faça 2 exemplos de uso correto. Justifique.
+   
+   
+   Orçamento 1.0 = D
+   Orçamento 2.0 = P
