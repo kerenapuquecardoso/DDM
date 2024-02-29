@@ -37,7 +37,7 @@ int funcaoParamReturn(int x, String y){
   return x + y; 
 }
 // por padrão as variáveis não podem ser nulas. utilizando o var. 
-// para substituir você pode colocar um padrão na hora de ler os dados , por exemplo em int pode ser colocado ??'0', e em String colocar o toUpperCase
+// para substituir você pode colocar um padrão na hora de ler os dados , por exemplo em int pode ser colocado ??'0' chamado de valor padrão, e em String colocar o toUpperCase
 test(Pessoa pessoa){
   pessoa.buscarDados();}
 ---------------------------------------- Desafio 
