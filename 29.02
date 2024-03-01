@@ -92,15 +92,22 @@ bool validarAprovacao(double media) {
 void main() {
   var inputNota = stdin.readLineSync()!;
   var notaUm = int.parse(inputNota);
-  validacao(notaUm);
 
   var inputNotaDois = stdin.readLineSync()!;
   var notaDois = int.parse(inputNotaDois);
-  
-  print(media(notaUm, notaDois));
 
+  print(validacao(notaUm));
 
+  dynamic medias = media(notaUm, notaDois);
+  print(medias);
+
+  if (validarAprovacao(medias) == true) {
+    print('aprovado!');
+  } else {
+    print('reprovado');
+  }
 }
+
 
 
 Atividade 01
@@ -130,4 +137,5 @@ b) Em relação a cada tipo de parâmetro, faça 3 exemplos do estudo de caso.
 c) Em relação a cada tipo de parâmetro, faça 3 exemplos do projeto. 
 
 uma função 
--- cargo = P. 
+-- cargo almejado = P
+-- com dificuldades pontuais à serem superadas na póxima aula 
