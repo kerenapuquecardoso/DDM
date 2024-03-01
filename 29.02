@@ -40,7 +40,11 @@ int funcaoParamReturn(int x, String y){
 // para substituir você pode colocar um padrão na hora de ler os dados , por exemplo em int pode ser colocado ??'0' chamado de valor padrão, e em String colocar o toUpperCase
 test(Pessoa pessoa){
   pessoa.buscarDados();}
+
+
 ---------------------------------------- Desafio 1 
+
+import 'dart:io';
 double media(int notaUm, int notaDois){
   var media = (notaUm + notaDois) / 2;
   return media;
@@ -65,7 +69,39 @@ void validarAprovacao( double media){
   print('{$media  >= 6 ? 'aprovado' : 'reprovado'}');
 }
 
---------------------------------- Desafio 2 
+------------------------------------- Desafio 2 
+
+import 'dart:io';
+
+double media(int notaUm, int notaDois) {
+  return ((notaUm + notaDois) / 2);
+}
+
+bool validacao(int nota) {
+  if (nota >= 0 && nota <= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+bool validarAprovacao(double media) {
+  return (media >= 6);
+}
+
+void main() {
+  var inputNota = stdin.readLineSync()!;
+  var notaUm = int.parse(inputNota);
+  validacao(notaUm);
+
+  var inputNotaDois = stdin.readLineSync()!;
+  var notaDois = int.parse(inputNotaDois);
+  
+  print(media(notaUm, notaDois));
+
+
+}
+
 
 Atividade 01
 a) Solicite 2 notas de avaliações e calcule a média; 
