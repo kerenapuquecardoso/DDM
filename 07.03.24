@@ -1,0 +1,104 @@
+
+Atividade 01 - Parâmetros Posicionais
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+ // parametros posicionais
+ void main(){
+   valorTraje(1234, 'vestido noiva pérola');
+ }
+
+ void valorTraje( int codigo, String nomeTraje){
+      double valor = codigo.toDouble;
+      print('o valor do traje é $valor');
+ }
+
+-----------------------------------
+Atividade 02 - Parâmetros Opcionais
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+ void funcao(int x, [String y=6]){ // com o uso dos colchetes ele se torna um parâmetro opicional, no entanto você deve inserir um valor padrão
+   print('variavel');
+ }
+// os parametros opicionais devem sempre ser colocador por ultimo
+
+
+-----------------------------------
+Atividade 03 - Parâmetros Nomeados
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+void funcaoParametroNomedo({int idade=18, String nome='Telma'}){ // se tem nome a posição não importa , não é necessário informar por padrão
+  print('nome: $nome, idade $idade'); 
+}
+// para  tornar opicional o parametro obrigatório nesse caso você utiliza a palavra chave 'required'
+//pode se misturar em uma função só os dois tipos de parâmetros
+-----------------------------------
+Atividade 04 - Parâmetros do Tipo Função
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+------------------------------------
+Atividade 05 - Funções Anônimas
+- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+------------------------------------
+Atividade 06 
+Escreva diversos exemplos de funções (sem contexto) nomeadas que possua parâmetro do tipo função e faça a chamada utilizado funções anônimas que possua diversas linhas de código (o quanto for necessário).
+Escreva 3 exemplos do seu projeto de funções nomeadas que possua parâmetro do tipo função e faça a chamada utilizado funções anônimas que possua diversas linhas de código (o quanto for necessário).
+Escreva um exemplo contextualizado 
+- do uso correto de um parâmetro do tipo nulo.
+- de uma única função que possua parâmetros nomeados e poscionais. 
+- de uma única função que possua parâmetros posicionais com e sem valor padrão. 
+- de uma única função que possua parâmetros nomeados com e sem valor padrão. 
+
+void main() {
+  trajeAlugado('Vestido Amelia', 155);
+  trajeAlugado('Terno', 12398, 'Smoking para noivo');
+  print('${compra(100, 5, calcularDesconto)}');
+  print('${compra(100, 5, (double p0, int p1) => (p0 * p1) / 100)}'); // ex 05
+}
+
+//Atividade 02 - Parâmetros Opcionais
+//- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+void trajeAlugado(String nome, int codigo,
+    [String descricao = 'traje de festa']) {
+  print(
+      'Aluguel de um traje com nome: $nome, com o códio: $codigo e a seguinte descrição: $descricao');
+}
+
+//Atividade 03 - Parâmetros Nomeados
+//Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+void clientes(
+    {required String nomeCliente,
+    required String cpf,
+    required String idade,
+    bool ehCliente = true}) {
+  print(
+      'cliente cadastrado\n nome: $nomeCliente | CPF: $cpf | idade: $idade | cliente: $ehCliente');
+}
+
+//Atividade 04 - Parâmetros do Tipo Função
+
+double compra(double x, int y, Function(double, int) f) {
+  var vDesconto = calcularDesconto(x, y);
+  return x - vDesconto;
+}
+
+double calcularDesconto(double valor, int desconto) {
+  return (valor * desconto) / 100;
+}
+
+//Atividade 05 - Funções Anônimas
+//- Escreve 3 exemplos do seu projeto contendo todo conteúdo passado;
+
+/**void main() {
+  trajeAlugado('Vestido Amelia', 155);
+  trajeAlugado('Terno', 12398, 'Smoking para noivo');
+  print('${compra(100, 5, calcularDesconto)}');
+  media(10, 6, (double n1, double n2)=> (n1 + n2)/ 2 );
+ */
+
+
+//nomeadas que possua parâmetro do tipo função e faça a chamada utilizado funções anônimas que possua diversas linhas de código
+
+// custo D
+
+
+}
+
