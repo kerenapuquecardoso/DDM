@@ -1,0 +1,39 @@
+#Diario
+// em dart o construtor não precisa de chaves, ele tem características de função entretanto ele não é completamente uma função     
+// construtor pode ter os parâmetros nominais, posicionais 
+// para definir uma variavel private basta adicionar o simbolo: _
+
+-----------------------
+class Traje{
+    var tamanho = 0;
+    var cor = 'azul';
+    var _z = 0;
+    // o _ é usado para indicar que a variável é private
+
+  int get z{
+    return z;
+  }
+  // versão aerofunction
+  int get z => _z;
+
+  void set z(int valor){
+    _z = valor;
+  }
+
+  // versão aerofunction
+  set z(int valor) => _z = valor;
+  
+  Traje(String cor, {required this.tamanho}){
+        print('O traje da cor $cor tem o tamanho ${this.tamanho}');
+
+    }
+}
+------------------------
+
+
+import 'trabalho.dart';
+
+void main(List<String> args){
+  Traje traje = new Traje('amarelo', tamanho: 46);
+  
+}
