@@ -41,3 +41,99 @@ void main(List<String> args){
 }
 
 // quando trabalhamos com objetos trabalhamos com referências e não valor
+
+import 'cidade.dart';
+import 'estado.dart';
+import 'trabalho.dart';
+import 'venda.dart';
+import 'cliente.dart';
+import 'fornecedor.dart';
+
+void main(List<String> args) {
+  Traje traje = new Traje('amarelo', tamanho: 46);
+  print(traje.codigo);
+  var estado = Estado(id: 1, nome: 'Parana', sigla: 'PR');
+  var cidade = Cidade(id: 1, nome: 'Paranavaí', estado: estado);
+  var cidade1 = Cidade(
+      id: 2,
+      nome: 'Naviraí',
+      estado: Estado(id: 2, nome: 'Mato Grosso', sigla: 'MT'));
+
+  var venda1 = Venda(
+      id: 1,
+      cliente: Cliente(
+          id: 1,
+          nome: 'Maria',
+          cidade_moradia: cidade1,
+          cidade_trabalho: Cidade(
+              id: 3,
+              nome: 'Bom Conselho',
+              estado: Estado(id: 3, nome: 'Pernanbuco', sigla: 'PE'))),
+      fornecedor: Fornecedor(
+          id: 1,
+          nome: 'Afonso',
+          cidade_moradia: cidade,
+          cidade_trabalho: cidade),
+      calculoComissao: (double p0, int p1) => (p0 * p1) / 100);
+
+  var venda2 = Venda(
+      id: 2,
+      cliente: Cliente(
+          id: 2,
+          nome: 'Almerinda',
+          cidade_moradia: Cidade(
+              id: 4,
+              nome: 'Palmeira dos Indios',
+              estado: Estado(id: 4, nome: 'Alagoas', sigla: 'PR')),
+          cidade_trabalho: cidade1),
+      fornecedor: Fornecedor(
+          id: 2,
+          nome: 'Tulio',
+          cidade_moradia: Cidade(
+              id: 6,
+              nome: 'São Chico',
+              estado: Estado(id: 7, nome: 'Santa Catarina', sigla: 'SC')),
+          cidade_trabalho: cidade),
+      calculoComissao: (double p0, int p1) => (p0 * p1) / 100);
+
+  var venda3 = Venda(
+      id: 3,
+      cliente: Cliente(
+          id: 3,
+          nome: 'Dália',
+          cidade_moradia: cidade1,
+          cidade_trabalho: Cidade(id: 5, nome: 'Paranacity', estado: estado)),
+      fornecedor: Fornecedor(
+          id: 3,
+          nome: 'Bastião',
+          cidade_moradia: Cidade(
+              id: 7,
+              nome: 'Chapecó',
+              estado: Estado(id: 8, nome: 'Santa Catarina', sigla: 'SC')),
+          cidade_trabalho: cidade1),
+      calculoComissao: (double p0, int p1) => (p0 * p1) / 100);
+}
+
+// ATIVIDADES PROPOSTAS:
+
+import 'cidade.dart';
+import 'estado.dart';
+import 'trabalho.dart';
+import 'venda.dart';
+import 'cliente.dart';
+import 'fornecedor.dart';
+
+void main(List<String> args) {
+  Traje traje = new Traje('amarelo', tamanho: 46);
+  print(traje.codigo);
+  var estado = Estado(id: 1, nome: 'Parana', sigla: 'PR');
+  var cidade = Cidade(id: 1, nome: 'Paranavaí', estado: estado);
+  var cidade1 = Cidade(id: 2, nome: 'Naviraí', estado: Estado(id: 2, nome: 'Mato Grosso', sigla: 'MT'));
+  var venda = Venda(id: 1, cliente: Cliente(id: 1, nome: 'Maria', cidade_moradia: cidade1, cidade_trabalho: Cidade(id: 3, nome: 'Bom Conselho', estado: Estado(id: 3, nome: 'Pernanbuco', sigla: 'PE'))), fornecedor: Fornecedor(id: 1, nome: 'Afonso', cidade_moradia: cidade, cidade_trabalho: cidade), calculoComissao: (double p0, int p1) => (p0 * p1) / 100 );
+
+  var venda2 = Venda(id: 2, cliente: Cliente(id: 2, nome: 'Almerinda', cidade_moradia: Cidade(id: 4, nome: 'Palmeira dos Indios', estado: Estado(id: 4, nome: 'Alagoas', sigla: 'PR')), cidade_trabalho: cidade1), fornecedor: Fornecedor(id: 2, nome: 'Tulio', cidade_moradia: Cidade(id: 6, nome: 'São Chico', estado: Estado(id: 7, nome: 'Santa Catarina', sigla: 'SC')), cidade_trabalho: cidade), calculoComissao: (double p0, int p1) => (p0 * p1) / 100);
+
+
+  var venda3 = Venda( id: 3, cliente: Cliente(id: 3, nome: 'Dália', cidade_moradia: cidade1, cidade_trabalho: Cidade(id: 5, nome: 'Paranacity', estado: estado)), fornecedor: Fornecedor(id: 3, nome: 'Bastião', cidade_moradia: Cidade( id: 7, nome: 'Chapecó', estado: Estado(id: 8, nome: 'Santa Catarina', sigla: 'SC')),  cidade_trabalho: cidade1), calculoComissao: (double p0, int p1) => (p0 * p1) / 100 );
+}
+ 
