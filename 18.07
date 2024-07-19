@@ -1,0 +1,18 @@
+## Definir os requisitos do projeto:
+- foi definido alguns requisitos funcionais e critérios de aceite
+## Testes automatizados e manuais
+- testes automatizados é um código que testa partes do seu código, caso esteja utilizando módulos ele pode testar os módulos de serviço
+- teste manuais é feito por exemplo o teste no Postman a api
+
+## Testes automatizados podem ser:
+- Testes unitários
+- Testes de Integração
+- Testes de Sistema
+- Teste de Ponta a Ponta
+- Teste de Aceita
+
+## NÃO HÁ COMO COBRIR TODAS AS FALHAS EM RELAÇÃO COM OS TESTES 
+# Deve haver um método de critérios para a realização de testes 
+
+#Técnicas de testes 
+- Classe de Equivalência
