@@ -1,0 +1,10 @@
+Nesta aula abordamos os seguintes conceitos:
+-- criação do projeto relacionado a gestão de notas
+-- pesquisas relacionadas à conceitos de programação 
+-- utilização do projeto como base para o desenvolvimento da avaliação
+- Dart: expressão regular, map, isEmpty, split, interfaces, classe
+- Testes unitários: sintaxe, nomenclatura, grupos de teste, descrição e equivalência;
+- Desenvolvimento de testes unitários de requisitos: puros, com dependência de dados e ???.
+- Guard Clause
+- Inversão de Dependência
+- Padrões de Projetos: DTO,  repository e DAO;
