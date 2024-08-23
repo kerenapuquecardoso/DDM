@@ -1,0 +1,10 @@
+INVERSÃO DE DEPENDÊNCIAS: é um dos princípios SOLID de design de software. Esse princípio sugere que módulos de alto nível (que contêm lógica de negócio) não devem depender
+de módulos de baixo nível (que interagem com sistemas externos, como bancos de dados ou APIs). Em vez disso, ambos devem depender de abstrações (interfaces ou classes abstratas).
+Dois princípios importantes da inversão de dependências:
+Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
+Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
+
+INJEÇÃO DE DEPENDÊNCIAS: A Injeção de Dependências é uma técnica para implementar a Inversão de Dependências.
+Ela se refere ao ato de fornecer (ou injetar) as dependências que um objeto precisa de fora, em vez de o próprio objeto criar essas dependências.
+
+CONCEITOS DE POO E TESTES TIVERAM GRANDE IMPACTO NA AULA DE HOJE.
