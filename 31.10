@@ -8,3 +8,15 @@
 → Auxilio dos que estão com dificuldades/atrasados; 
 → Planejamento do que será entregue até o final do ano;
 → Planejamento das interfaces - fluxo das telas.
+
+
+PLANEJAMENTO PARA A ENTREGA DO 3° TRIMESTRE: 
+→ O desenvolvimento do Back será feito do funcionário
+→ Deverá ter ajustes no momento do cadastro do Cliente, na hora de escolher a cidade
+→ Devera ter a tela de login para o funcionário
+→ Deverá ter a tela  de cadastro de funcionário apenas para o primeiro acesso
+→ Deverá ter uma tela Home com os seguinte botões que levarão para as respectivas telas: 
+  → Cadastrar novo cliente
+  → Consultar todos os clientes
+  → consultar cliente pelo nome
+→ O funcionário deverá cadastrar o cliente 
