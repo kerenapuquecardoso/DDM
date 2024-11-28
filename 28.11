@@ -1,0 +1,17 @@
+Atividades/Dirário
+Atividade 01 - tempo máximo até 21h
+	Refatoração e Modularização - >>DUPLAS<<
+	SUFICIENTE - aos que estão com dificuldades
+	- Refatorar 2 CRUDs, com acompanhamento de um SENIOR. Diário de aula: apresentar consciência do código, melhoria e ajuda que tiveram.
+
+	DEMAIS
+	- PARTE 01 *ANÁLISE DO CÓDIGO* - Identificar uma funcionalidade crítica do aplicativo (do colega) que está acoplada e sugerir melhorias. 
+		DIÁRIO DE AULA: apresentar a(s) funcionalidades(s) acopladas encontradas e a(s) solução(es) sugeridas
+	- PARTE 02 *REFATORAÇÃO* - o dono do projeto deve adotar técnicas que permita a troca de implementação/tecnologia/biblioteca de forma 
+		mais fácil.
+		DIÁRIO DE AULA: Apresentar a refatoração.
+	- Dar suporte aos júniores.
+		DIÁRIO DE AULA: indicar quem ajudou.
+
+Atividade 02 - continuar o desenvolvimento do projeto
+		DIÁRIO DE AULA: apresentar o progresso e o quanto falta.
