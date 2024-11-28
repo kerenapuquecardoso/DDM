@@ -15,3 +15,9 @@ Atividade 01 - tempo máximo até 21h
 
 Atividade 02 - continuar o desenvolvimento do projeto
 		DIÁRIO DE AULA: apresentar o progresso e o quanto falta.
+
+------------------------------------------------------------
+Atividade 01 (Dupla com Vinícius): 
+	Ao analisar o código do meu colega, observei que estava com erros relacionado ao id do cliente, pois ele estava salvando como uma string o que estava conflitando com a tabela do 
+banco de dados a qual constava que o id era do tipo INTEGER NOT NULL PRIMARY KEY, pedi para que ele fissese as devidas alterações. Como resultado, agora o app dele está deletando
+normalmente um cliente.
